@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(145, 121, 118, 0.845);
+    display: flex;
+}
+
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(0, 179, 255);
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(118, 109, 114, 0.388);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(72, 255, 0); */
+}
+
+#text-div{
+    /* height:300px ; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 8%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#text-div h1{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 65px;
+    letter-spacing: 7px;
+    color: white;
+}
+
+#small-img-div{
+    height: 300px;
+    width: 300px;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url(https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#vertical-text{
+    position: absolute;
+    right: -20%;
+    top: 10%;
+    transform-origin: 0% 0%;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+
+#vertical-text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(243, 235, 235, 0.642);
+    color: transparent;
+    transform: rotate(90deg);
+}
+
+#nav{
+    position: absolute;
+    /* background-color: red; */
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 5%;
+    top: 5%;
+}
+
+#nav img{
+    height: 50px;
+}
+
+#nav h5{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #fafafac6;
+    text-transform: uppercase;
+}
