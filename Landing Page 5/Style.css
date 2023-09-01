@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body{
@@ -10,51 +11,208 @@ html, body{
 }
 
 #main{
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
 #top{
     width: 100%;
-    height: 60%;
-    background-image: url(https://images.unsplash.com/photo-1578468320163-5e66e3b36839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1491002052546-bf38f186af56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1208&q=80);
     background-size: cover;
-    background-position:40% 15% ;
+    background-position:40% 20% ;
 }
 
 #overlay{
     width: 100%;
-    height: 100%;
+    min-height: inherit;
     background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+#text{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    padding: 0 10vw;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textright{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textright p{
+    font-size: 12px;
+    width: 30%;
+    color: rgb(0, 0, 0);
+}
+
+#textright #icons{
+    color: black;
+}
+
+#text h1{
+    font-size: 5vw;
+    font-weight: 500;
+    color: rgb(74, 70, 70);
 }
 
 #bottom{
     display: flex;
     width: 100%;
-    height: 40%;
+    min-height: 40vh;
     background-color: blueviolet;
 }
 
 #bone{
     width: 25%;
-    height: 100%;
-    background-color: yellow;
+    min-height: inherit;
+    background-color: white;
+    padding: 30px;
+}
+
+#bone h3{
+    color: rgba(19, 19, 19, 0.731);
+}
+
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 7px;
 }
 
 #btwo{
     width: 25%;
-    height: 100%;
+    min-height: inherit;
     background-color: purple;
+    background-image: url(https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80);
+    background-size: cover;
+    background-position: top;
 }
 
 #bthree{
-    width: 25%;
-    height: 100%;
+    width: 20%;
+    min-height: inherit;
     background-color: green;
 }
 
+#bthreetop{
+    min-height: 20vh;
+    width: 100%;
+    background-color: orangered;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#bthreetop p{
+    font-size: 11px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+#bthreebottom{
+    min-height: 20vh;
+    width: 100%;
+    background-color: yellow;
+    background-image: url(https://images.unsplash.com/photo-1530906622963-8a60586a49c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
 #bfour{
-    width: 25%;
-    height: 100%;
-    background-color: pink;
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: white;
+    padding: 30px;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notf #photo1{
+    height: 40px;
+    width: 40px;
+    background-image: url(https://images.unsplash.com/photo-1514626585111-9aa86183ac98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.notf #photo2{
+    height: 40px;
+    width: 40px;
+    background-image: url(https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.notf p{
+    width: 86%;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.744);
+}
+
+@media(max-width: 500px){
+    #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #textright #icons{
+        margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    #bone{
+        width: 100%;
+    }
+
+    #btwo{
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    #bthree{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #bthreebottom{
+        min-height: 50vh;
+    }
+
+    #bfour{
+        width: 100%;
+    }
 }
